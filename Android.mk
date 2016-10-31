@@ -68,6 +68,7 @@ LOCAL_SRC_FILES_mips64 += jsimd_none.c
 
 LOCAL_CFLAGS += -O3 -fstrict-aliasing
 LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -DJDCT_DEFAULT=JDCT_IFAST
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)
 
 ifneq (,$(TARGET_BUILD_APPS))
